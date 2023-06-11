@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero'
 import Image from 'next/image'
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <main className="overflow-hidden">
       
 
-      
+      <Hero />
 
      
     </main>
