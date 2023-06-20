@@ -9,7 +9,7 @@ const Hero = () => {
 
     }
   return (
-    <div className='hero'>
+    <header className='hero'>
         <div className='flex-1 pt-20 sm:pt-28 padding-x'>
             <h1 className='hero__title'>
                 Find, Book, or rent a car - quickly and easily!
@@ -38,7 +38,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </header>
   )
 }
 
