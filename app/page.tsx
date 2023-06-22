@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero'
 import Image from 'next/image'
+import SearchBar from '@/components/SearchBar'
 
 export default function Home() {
   return (
@@ -18,7 +19,14 @@ export default function Home() {
             Explore the cars you might like
           </p>
         </div>
+
         <div className='home__filters'>
+
+          <SearchBar />
+
+          <div>
+            
+          </div>
 
         </div>
       </div>
