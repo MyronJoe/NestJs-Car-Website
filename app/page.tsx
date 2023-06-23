@@ -24,8 +24,9 @@ export default function Home() {
 
           <SearchBar />
 
-          <div>
-            
+          <div className='home__filter-container'>
+
+
           </div>
 
         </div>
