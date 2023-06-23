@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import Image from 'next/image'
 import SearchBar from '@/components/SearchBar'
+import CustomFilter from '@/components/CustomFilter'
 
 export default function Home() {
   return (
@@ -26,6 +27,8 @@ export default function Home() {
 
           <div className='home__filter-container'>
 
+            <CustomFilter title='fuel' />
+            <CustomFilter title='year' />
 
           </div>
 
