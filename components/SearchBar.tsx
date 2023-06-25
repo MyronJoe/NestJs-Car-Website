@@ -4,7 +4,7 @@ import React from 'react'
 
 import {useState} from 'react'
 
-import SearchManufacturer from './searchManufacturer'
+import SearchManufacturer from './SearchManufacturer'
 
 const SearchBar = () => {
 
