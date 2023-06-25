@@ -2,9 +2,14 @@
 
 import React from 'react'
 
+import {useState} from 'react'
+
 import SearchManufacturer from './searchManufacturer'
 
 const SearchBar = () => {
+
+    const [manufacturer, setManufacturer] = useState('')
+
     const handleSearch = () => {
 
     } 
@@ -13,7 +18,8 @@ const SearchBar = () => {
 
         <div className='searchbar__item'>
             <SearchManufacturer 
-            
+            manufacturer={manufacturer}
+            setManufacturer={setManufacturer}
             />
         </div>
         
