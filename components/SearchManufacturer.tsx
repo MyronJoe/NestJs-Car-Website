@@ -5,6 +5,9 @@ import { Fragment, useState } from 'react'
 import Image from 'next/image'
 
 const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerProps) => {
+
+    const [query, setQuery] = useState('')
+
   return (
     <div className='sear-manufacturer'>
         <Combobox>
@@ -24,8 +27,18 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerP
                     className='search-manufacturer__input'
                     placeholder='Volkswagen'
                     displayValue={(manufacturer: string) => manufacturer}
-                    onChange={}
+                    onChange={(e) => setQuery(e.target.value)}
                 />
+
+                <Transition
+                as={Fragment}
+                leave='transition ease-in duration-100'
+                leaveFrom='opacity-100'
+                leaveTo='opacity-0'
+                afterLeave={() => setQuery('')}
+                >
+
+                </Transition>
             </div>
 
         </Combobox>
