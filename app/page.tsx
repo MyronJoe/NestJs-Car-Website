@@ -8,7 +8,7 @@ export default async function Home() {
 
   const allCars = await getCars()
 
-  console.log(allCars)
+  const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
     <main className="overflow-hidden">
@@ -39,6 +39,22 @@ export default async function Home() {
           </div>
 
         </div>
+
+        <div className=''>
+
+          {!isDataEmpty ? (
+            <section>
+              we have cars
+            </section>
+          ):(
+            <section className='home__error-container'>
+              <h2 className='text-black text-xl font-bold'>Ooops, no result</h2>
+              <p>{allCars?.message}</p>
+            </section>
+          )}
+
+        </div>
+
       </div>
 
     </main>
