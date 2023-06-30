@@ -44,7 +44,11 @@ export default async function Home() {
 
           {!isDataEmpty ? (
             <section>
-              we have cars
+              <div className='home__cars-wrapper'>
+                {allCars?.map((car) => (
+                  
+                ))}
+              </div>
             </section>
           ):(
             <section className='home__error-container'>
