@@ -9,6 +9,8 @@ export default async function Home() {
 
   const allCars = await getCars()
 
+  // console.log(allCars)
+
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
