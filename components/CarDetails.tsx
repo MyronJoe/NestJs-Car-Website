@@ -37,8 +37,8 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                             leaveTo="opacity-0 scale-95"
                         >
                             <Dialog.Panel className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white text-left shadow-xl transition-all flex flex-col gap-5">
-                                <button type='button' onClick={closeModal} className='absolute top-2 left-2 w-fit z-10 p-2 bg-primary-blue-100 rounded-full'>
-                                    <Image 
+                                <button type='button' onClick={closeModal} className='absolute top-2 right-2 w-fit z-10 p-2 bg-primary-blue-100 rounded-full'>
+                                    <Image
                                         src='/close.svg'
                                         alt='close'
                                         height={20}
@@ -47,19 +47,67 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                                     />
                                 </button>
 
-                 
-                                <div className="flex flex-1 flex-col">
-                            
+
+                                <div className="flex flex-1 flex-col gap-3">
+
+                                    <div className='w-full h-40 relative bg-pattern bg-cover bg-center rounded-lg'>
+                                        <Image
+                                            src='/hero.png'
+                                            alt='Car Model'
+                                            // width={50}
+                                            // height={50}
+                                            fill
+                                            priority
+                                            className='object-contain'
+                                        />
+                                    </div>
+
+                                    <div className='flex gap-3'>
+
+                                        <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                                            <Image
+                                                src='/hero.png'
+                                                alt='Car Model'
+                                                // width={50}
+                                                // height={50}
+                                                fill
+                                                priority
+                                                className='object-contain'
+                                            />
+                                        </div>
+                                        <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                                            <Image
+                                                src='/hero.png'
+                                                alt='Car Model'
+                                                // width={50}
+                                                // height={50}
+                                                fill
+                                                priority
+                                                className='object-contain'
+                                            />
+                                        </div>
+                                        <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                                            <Image
+                                                src='/hero.png'
+                                                alt='Car Model'
+                                                // width={50}
+                                                // height={50}
+                                                fill
+                                                priority
+                                                className='object-contain'
+                                            />
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
-                                <div className="mt-4">
-                                    <button
-                                        type="button"
-                                        className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                        onClick={closeModal}
-                                    >
-                                        Got it, thanks!
-                                    </button>
+                                <div className='flex flex-1 flex-col gap-2'>
+
+                                    <h2 className='font-semibold text-xl capitalize'>{car.make} {car.model}</h2>
+
+                                    
+
                                 </div>
                             </Dialog.Panel>
                         </Transition.Child>
