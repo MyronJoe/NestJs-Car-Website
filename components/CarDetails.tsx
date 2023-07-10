@@ -68,8 +68,6 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                                             <Image
                                                 src='/hero.png'
                                                 alt='Car Model'
-                                                // width={50}
-                                                // height={50}
                                                 fill
                                                 priority
                                                 className='object-contain'
